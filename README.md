@@ -1,9 +1,8 @@
-```markdown
 # Diabetes Prediction Project
 
 ## Overview
 
-This Python project focuses on predicting diabetes using a dataset. It includes a comprehensive analysis of the dataset, exploratory data analysis (EDA), and the application of multiple prediction models. Cross-validation is implemented during each model prediction to ensure robust and reliable results.
+This Python project focuses on predicting if a patient has diabetes using a precompiled dataset. It includes a comprehensive analysis of the dataset, exploratory data analysis (EDA), and the application of multiple prediction models. Cross-validation is implemented during each model prediction to ensure robust and reliable results.
 
 ## Prerequisites
 
@@ -12,10 +11,15 @@ Make sure you have the required libraries installed. You can install them using 
 ```bash
 pip install pandas matplotlib scikit-learn
 ```
+Or use "pip3" if your installed python version is python3.0 or greater
+
+```bash
+pip3 install pandas matplotlib scikit-learn
+```
 
 ## Usage
 
-Run the main.py script to execute the analysis and predictions. The script provides an overview of the dataset, performs exploratory data analysis, applies various prediction models, and ensures cross-validation for each model. Feel free to customize the script according to your specific project details.
+Run each script to execute the analysis and predictions. The script provides an overview of the dataset, performs exploratory data analysis, applies various prediction models, and ensures cross-validation for each model. Feel free to customize the script according to your specific project details.
 
 ## Overview of Dataset
 
@@ -31,7 +35,7 @@ Multiple prediction models are applied to forecast diabetes outcomes. The script
 
 ## Cross Validation
 
-Cross-validation is implemented during each prediction model to evaluate its performance and ensure robustness. This technique helps in obtaining a more accurate estimate of the model's effectiveness on an independent dataset.
+Cross-validation is also implemented during each prediction model to evaluate its performance and ensure robustness. This technique helps in obtaining a more accurate estimate of the model's effectiveness on an independent dataset.
 
 ## Notes
 
