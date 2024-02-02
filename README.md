@@ -1,9 +1,9 @@
-
+```markdown
 # Diabetes Prediction Project
 
 ## Overview
 
-This Python project focuses on predicting if a patient has diabetes using a compiled dataset. It includes a comprehensive analysis of the dataset, exploratory data analysis (EDA), and the application of multiple prediction models. Cross-validation is implemented during each model prediction to ensure robust and reliable results.
+This Python project focuses on predicting diabetes using a dataset. It includes a comprehensive analysis of the dataset, exploratory data analysis (EDA), and the application of multiple prediction models. Cross-validation is implemented during each model prediction to ensure robust and reliable results.
 
 ## Prerequisites
 
