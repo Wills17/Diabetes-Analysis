@@ -40,6 +40,3 @@ Cross-validation is also implemented during each prediction model to evaluate it
 ## Notes
 
 Feel free to customize and extend the script based on your specific requirements. Additionally, documentation for each function or module within the project can be added to enhance understanding and maintainability.
-```
-
-Feel free to modify the content based on the specific details of your project and add any additional information or ideas you find relevant.
