@@ -21,6 +21,9 @@ pip3 install pandas matplotlib scikit-learn
 
 Run each script to execute the analysis and predictions. The script provides an overview of the dataset, performs exploratory data analysis, applies various prediction models, and ensures cross-validation for each model. Feel free to customize the script according to your specific project details.
 
+## Dataset Location
+The dataset used for this project can be found in the "Dataset" folder. Ensure that the dataset is appropriately placed in this folder before running the scripts.
+
 ## Overview of Dataset
 
 The dataset used in this project contains information related to diabetes. The main.py script provides a detailed overview of the dataset, including key statistics and visualizations to help understand the data.
