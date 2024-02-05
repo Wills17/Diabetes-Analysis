@@ -26,7 +26,7 @@ The dataset used for this project can be found in the "Dataset" folder. Ensure t
 
 ## Overview of Dataset
 
-The dataset used in this project contains information related to diabetes. The main.py script provides a detailed overview of the dataset, including key statistics and visualizations to help understand the data.
+The dataset used in this project contains information related to diabetes. The main.py script in the "Overview" folder provides a detailed overview of the dataset, including key statistics and visualizations to help understand the data.
 
 ## Exploratory Data Analysis (EDA)
 
