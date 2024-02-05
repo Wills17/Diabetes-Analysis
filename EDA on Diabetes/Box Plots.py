@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 #import dataset file
-diabetes = pd.read_csv('diabetes.csv')
+diabetes = pd.read_csv('Dataset/diabetes.csv')
 #print(diabetes)
 print(diabetes.head())
 
