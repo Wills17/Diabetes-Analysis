@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 n = "\n" #Jump to next line
 
 #import dataset file
-diabetes = pd.read_csv('diabetes.csv')
+diabetes = pd.read_csv('Dataset/diabetes.csv')
 #print(diabetes)
 #print(diabetes.columns)
 
