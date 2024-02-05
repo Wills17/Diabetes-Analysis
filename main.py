@@ -13,7 +13,7 @@ from sklearn.metrics import classification_report
 n = "\n"            #Jump to next line
 
 #import dataset dataset
-diabetes = pd.read_csv('diabetes.csv')
+diabetes = pd.read_csv('Dataset/diabetes.csv')
 print(diabetes)
 print(diabetes.columns)
 print("\033c")      #Clear screen
