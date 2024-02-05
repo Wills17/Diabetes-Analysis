@@ -13,7 +13,7 @@ n = "\n"               #Jump to next line
 print("\033c")         #Clear screen
 
 #import dataset
-diabetes = pd.read_csv('diabetes.csv')
+diabetes = pd.read_csv('Dataset/diabetes.csv')
 
 X = diabetes.drop(['Outcome'], axis=1)  #Remove the outcome column from the dataset
 y = diabetes['Outcome']                 #Assign outcome column to variable y
