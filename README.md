@@ -42,7 +42,7 @@ Cross-validation is also implemented during each prediction model to evaluate it
 
 ## Custom Analysis
 
-A user-input section has been incorporated, enabling users to input their own analysis for prediction using the selected model. This interactive feature empowers users to customize the analysis according to their specific needs or experiment with different inputs. Simply follow the prompts provided to input your analysis, and the script will generate predictions based on the chosen model.
+A user-input section has been incorporated, enabling users to input their own analysis for prediction using the selected model. This interactive feature empowers users to customize the analysis according to their specific needs or experiment with different inputs. Simply follow the prompts provided to input your analysis, and the script will generate predictions based on the chosen model. The script can be found in the "Input" folder.
 
 ## Notes
 
