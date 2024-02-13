@@ -40,6 +40,10 @@ Multiple prediction models are applied to forecast diabetes outcomes. The script
 
 Cross-validation is also implemented during each prediction model to evaluate its performance and ensure robustness. This technique helps in obtaining a more accurate estimate of the model's effectiveness on an independent dataset.
 
+## Custom Analysis
+
+A user-input section has been incorporated, enabling users to input their own analysis for prediction using the selected model. This interactive feature empowers users to customize the analysis according to their specific needs or experiment with different inputs. Simply follow the prompts provided to input your analysis, and the script will generate predictions based on the chosen model.
+
 ## Notes
 
 Feel free to customize and extend the script based on your specific requirements. Additionally, documentation for each function or module within the project can be added to enhance understanding and maintainability.
