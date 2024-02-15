@@ -10,8 +10,12 @@ import time
 print("\033c")         #Clear screen
 n = "\n"               #Jump to next line
 
-#import dataset
-diabetes = pd.read_csv('Dataset/diabetes.csv')
+#import dataset and ensure dataset is in folder
+try: 
+    diabetes = pd.read_csv('Dataset/diabetes.csv')
+except FileNotFoundError:
+    print("Please ensure that the dataset is in the folder 'Dataset' and try again.") 
+    quit()
 
 X = diabetes.drop(['Outcome'], axis=1)  #Remove the outcome column from the dataset
 y = diabetes['Outcome']                 #Assign outcome column to variable y
