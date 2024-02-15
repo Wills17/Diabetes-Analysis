@@ -3,7 +3,6 @@ import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
@@ -12,12 +11,18 @@ from sklearn.metrics import classification_report
 n = "\n"               #Jump to next line
 print("\033c")         #Clear screen
 
-#import dataset
-diabetes = pd.read_csv('Dataset/diabetes.csv')
+#import dataset and ensure dataset is in folder
+try: 
+    diabetes = pd.read_csv('Dataset/diabetes.csv')
+except FileNotFoundError:
+    print("Please ensure that the dataset is in the folder 'Dataset' and try again.") 
+    quit()
 
 X = diabetes.drop(['Outcome'], axis=1)  #Remove the outcome column from the dataset
 y = diabetes['Outcome']                 #Assign outcome column to variable y
-print(X, y)
+print(X)
+print(y)
+print(n)
 
 #Split datasets for training and testing 
 X0, X_test, y0, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
