@@ -15,7 +15,7 @@ print("\033c")         #Clear screen
 try: 
     diabetes = pd.read_csv('Dataset/diabetes.csv')
 except FileNotFoundError:
-    print("Please ensure that the dataset is in the folder 'Dataset' and try again.") 
+    print("Please ensure that the file is in the folder 'Dataset' and try again.") 
     quit()
 
 X = diabetes.drop(['Outcome'], axis=1)  #Remove the outcome column from the dataset
