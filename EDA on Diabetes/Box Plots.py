@@ -4,8 +4,13 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-#import dataset file
-diabetes = pd.read_csv('Dataset/diabetes.csv')
+#import dataset and ensure dataset is in folder
+try: 
+    diabetes = pd.read_csv('Dataset/diabetes.csv')
+except FileNotFoundError:
+    print("Please ensure that the dataset is in the folder 'Dataset' and try again.") 
+    quit()
+
 #print(diabetes)
 print(diabetes.head())
 
