@@ -64,52 +64,52 @@ def inputs():
     print()
     print("Please ensure to input correct details for accurate prediction")
     try:
-        Preg = int(input("Input for Pregnancies: "))
+        Preg = int(input("Enter number of pregnancies: "))
     except ValueError:
-        print("You didn't input an integer, please try again")
-        Preg = int(input("Input for Pregnancies: "))
+        print("You didn't input this detail correctly, please try again.")
+        Preg = int(input("Enter number of pregnancies: "))
         
     try:
         Glucose = int(input("Input for Glucose: "))
     except ValueError: 
-        print("You didn't input an integer, please try again")
+        print("You didn't input this detail correctly, please try again.")
         Glucose = int(input("Input for Glucose: "))
         
     try:
-        BP = int(input("Input for Blood Pressure: "))
+        BP = int(input("Enter Blood pressure: "))
     except ValueError: 
-        print("You didn't input an integer please try again")
-        BP = int(input("Input for Blood Pressure: "))
+        print("You didn't input this detail correctly, please try again.")
+        BP = int(input("Enter Blood pressure: "))
         
     try:
-        SkinThick = int(input("Input for Skin Thickness: "))
+        SkinThick = int(input("Enter skin thickness: "))
     except ValueError: 
-        print("You didn't input an integer please try again")
-        SkinThick = int(input("Input for Skin Thickness: "))
+        print("You didn't input this detail correctly, please try again.")
+        SkinThick = int(input("Enter skin thickness: "))
         
     try:
-        Insulin = int(input("Input for Insulin: "))
+        Insulin = int(input("Enter insulin level: "))
     except ValueError: 
-        print("You didn't input an integer please try again")
-        Insulin = int(input("Input for Insulin: "))
+        print("You didn't input this detail correctly, please try again.")
+        Insulin = int(input("Enter insulin level: "))
     
     try:
-        BMI = float(input("Input for BMI: "))
+        BMI = float(input("Enter BMI: "))
     except ValueError: 
-        print("You didn't input an integer please try again")
-        BMI = float(input("Input for BMI: "))
+        print("You didn't input this detail correctly, please try again.")
+        BMI = float(input("Enter BMI: "))
         
     try:
-        DPF = float(input("Input for Diabetes Pedigree Function: "))
+        DPF = float(input("Enter Diabetes Pedigree Function: "))
     except ValueError: 
-        print("You didn't input an integer please try again")
-        DPF = float(input("Input for Diabetes Pedigree Function: "))
+        print("You didn't input this detail correctly, please try again.")
+        DPF = float(input("Enter Diabetes Pedigree Function: "))
         
     try:
-        Age = int(input("Input for Age: "))
+        Age = int(input("Enter Age: "))
     except ValueError: 
-        print("You didn't input an integer please try again")
-        Age = int(input("Input for Age: "))
+        print("You didn't input this detail correctly, please try again.")
+        Age = int(input("Enter Age: "))
     
     Test_list = [[Preg, Glucose, BP, SkinThick, Insulin, BMI, DPF, Age]]
     print()
