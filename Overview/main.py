@@ -12,8 +12,13 @@ from sklearn.metrics import classification_report
 
 n = "\n"            #Jump to next line
 
-#import dataset dataset
-diabetes = pd.read_csv('Dataset/diabetes.csv')
+#import dataset and ensure dataset is in folder
+try: 
+    diabetes = pd.read_csv('Dataset/diabetes.csv')
+except FileNotFoundError:
+    print("Please ensure that the file is in the folder 'Dataset' and try again.") 
+    quit()
+
 print(diabetes)
 print(diabetes.columns)
 print("\033c")      #Clear screen
