@@ -1,49 +1,142 @@
-# Diabetes Prediction Project
+# 🩺 **DiabetesCheck — Machine Learning Web App for Diabetes Prediction**
 
-## Overview
+## 🌟 Overview
 
-This Python project focuses on predicting if a patient has diabetes using a precompiled dataset. It includes a comprehensive analysis of the dataset, exploratory data analysis (EDA), and the application of multiple prediction models. Cross-validation is implemented during each model prediction to ensure robust and reliable results.
+**DiabetesCheck** is a Flask-based **machine learning web application** that predicts whether a patient is at risk of diabetes based on health indicators.
+It provides a sleek dark-mode interface, supports multiple ML models, and delivers quick, interpretable predictions — all wrapped in a modern, responsive UI.
 
-## Prerequisites
+This app extends the offline Python model pipeline (EDA + Model Training + Cross Validation) into a **deployable web experience** powered by Flask.
 
-Make sure you have the required libraries installed. You can install them using the following command:
+---
+
+## ⚙️ **Features**
+
+* 🧠 **Multiple Models** — Logistic Regression & K-Nearest Neighbors
+* 💡 **User-Friendly Web Interface** — Simple input form with instant results
+* 🌙 **Dark Mode** — Elegant and readable design across devices
+* ⚕️ **Interactive Prediction** — Enter medical parameters and get real-time predictions
+* 🔍 **Model Transparency** — Displays which model made the prediction
+
+---
+
+## 📁 **Project Structure**
 
 ```bash
-pip install pandas matplotlib scikit-learn
+DIABETES-ANALYSIS/
+│
+├── Dataset/
+│   └── diabetes.csv
+│
+├── EDA on Diabetes/        # Exploratory Data Analysis
+│   ├── Box Plots.py
+│   ├── Histograms.py
+│   ├── Pair Plots.py
+│   └── Violin Plots.py
+│
+├── Input/                  # Test script
+│   └── Input.py
+│
+├── Models/                 # ML models
+│   ├── KNN_diabetes_model.pkl
+│   └── LR_diabetes_model.pkl
+│
+├── Overview/
+│   └── main.py             # Dataset summary/overview
+│
+├── Prediction Models/
+│   ├── Knn.py
+│   └── LogisticRegression.py
+│
+├── static/                 # Static frontend file
+│   └── styles.css
+│
+├── templates/              # HTML pages
+│   ├── home.html
+│   ├── predict.html
+│   └── result.html
+│
+├── app.py                  # Flask app entry point
+├── requirements.txt        # Dependencies
+│
+└── README.md
 ```
-Or use "pip3" if your installed python version is python3.0 or greater
+
+---
+
+## ⚙️ **Installation & Setup**
+
+### 1️⃣ Clone the repository
 
 ```bash
-pip3 install pandas matplotlib scikit-learn
+git clone https://github.com/yourusername/diabetescheck.git
+cd diabetescheck
 ```
 
-## Usage
+### 2️⃣ Install dependencies
 
-Run each script to execute the analysis and predictions. The script provides an overview of the dataset, performs exploratory data analysis, applies various prediction models, and ensures cross-validation for each model. Feel free to customize the script according to your specific project details.
+```bash
+pip install -r requirements.txt
+```
 
-## Dataset Location
-The dataset used for this project can be found in the "Dataset" folder. Ensure that the dataset is appropriately placed in this folder before running the scripts.
+### 3️⃣ Run the Flask app
 
-## Overview of Dataset
+```bash
+python app.py
+```
 
-The dataset used in this project contains information related to diabetes. The main.py script in the "Overview" folder provides a detailed overview of the dataset, including key statistics and visualizations to help understand the data.
+Then open your browser and go to 👉 **[http://127.0.0.1:5000/](http://127.0.0.1:5000/)**
 
-## Exploratory Data Analysis (EDA)
+---
 
-The project includes an in-depth exploratory data analysis to uncover patterns, trends, and relationships within the dataset. EDA is crucial for gaining insights into the data and informing the choice of prediction models.
+## 📊 **Dataset**
 
-## Prediction Models
+The model uses the **Pima Indians Diabetes Dataset**, a classic benchmark dataset for medical prediction tasks.
+It contains diagnostic measurements like:
 
-Multiple prediction models are applied to forecast diabetes outcomes. The script leverages popular machine learning models available in scikit-learn. The results of each model are cross-validated to ensure accuracy and reliability.
+* Glucose concentration
+* Blood pressure
+* BMI
+* Insulin level
+* Age, pregnancies, etc.
 
-## Cross Validation
+This dataset allows the model to learn risk patterns and generalize across patient data.
 
-Cross-validation is also implemented during each prediction model to evaluate its performance and ensure robustness. This technique helps in obtaining a more accurate estimate of the model's effectiveness on an independent dataset.
+---
 
-## Custom Analysis
+## 📊 **Exploratory Data Analysis (EDA)**
 
-A user-input section has been incorporated, enabling users to input their own analysis for prediction using the selected model. This interactive feature empowers users to customize the analysis according to their specific needs or experiment with different inputs. Simply follow the prompts provided to input your analysis, and the script will generate predictions based on the chosen model. The script can be found in the "Input" folder.
+The EDA scripts under `EDA on Diabetes/` provide visual insights into the dataset:
 
-## Notes
+* `Box Plots.py` — Outlier and spread visualization
+* `Histograms.py` — Distribution of variables
+* `Pair Plots.py` — Correlation patterns
+* `Violin Plots.py` — Density and range comparison
 
-Feel free to customize and extend the script based on your specific requirements. Additionally, documentation for each function or module within the project can be added to enhance understanding and maintainability.
+These analyses ensure proper understanding before model training.
+
+---
+
+## 🧪 **Models Used**
+
+| Model                         | Description                            | Strength                |
+| ----------------------------- | -------------------------------------- | ----------------------- |
+| **Logistic Regression**       | Linear model for binary classification | Fast, interpretable     |
+| **K-Nearest Neighbors (KNN)** | Instance-based non-linear model        | Flexible, pattern-aware |
+
+✅ Each model was trained and tested using **cross-validation** for better generalization.
+
+---
+
+## ⚠️ **Disclaimer**
+
+> This application provides **machine learning–based predictions** and is **not a substitute** for professional medical advice, diagnosis, or treatment.
+> Always consult a qualified healthcare professional for clinical guidance.
+
+---
+
+## 👨‍💻 **Author**
+
+**Williams Odunayo**
+*Machine Learning Engineer*
+
+
