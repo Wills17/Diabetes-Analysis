@@ -6,7 +6,6 @@
     <title>Predict - DiabetesCheck</title>
     <meta name="description" content="Enter patient information for diabetes risk prediction">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-
 </head>
 
 <body>
@@ -68,11 +67,11 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="bloodPressure" class="form-label">Blood Pressure (mm Hg)</label>
+                                <label for="bloodpressure" class="form-label">Blood Pressure (mm Hg)</label>
                                 <input 
                                     type="number" 
-                                    id="bloodPressure" 
-                                    name="bloodPressure" 
+                                    id="bloodpressure" 
+                                    name="bloodpressure" 
                                     class="form-input" 
                                     placeholder="e.g., 70" 
                                     min="0" 
@@ -80,11 +79,11 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="skinThickness" class="form-label">Skin Thickness (mm)</label>
+                                <label for="skinthickness" class="form-label">Skin Thickness (mm)</label>
                                 <input 
                                     type="number" 
-                                    id="skinThickness" 
-                                    name="skinThickness" 
+                                    id="skinthickness" 
+                                    name="skinthickness" 
                                     class="form-input" 
                                     placeholder="e.g., 20" 
                                     min="0" 
@@ -156,7 +155,7 @@
                             </div>
                         </div>
 
-                        <div class="form-   required>s">
+                        <div class="form-actions">
                             <button type="submit" class="btn btn-primary btn-lg btn-full">
                                 Get Prediction
                             </button>
@@ -169,7 +168,5 @@
             </div>
         </div>
     </main>
-
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
