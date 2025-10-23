@@ -7,7 +7,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 import time
 
-print("\033c")         #Clear screen
+# print("\033c")         #Clear terminal
 n = "\n"               #Jump to next line
 
 #import dataset and ensure dataset is in folder
@@ -173,9 +173,9 @@ def inputs():
             #print(pred[0])
             time.sleep(4)
             if pred[0] == 0:
-                print("Great, patient is not diabetic")
+                print("Great, patient is not diabetic.")
             else:
-                print("Unfortunately, patient is diabetic")
+                print("Unfortunately, patient is diabetic.")
             
         else:
             time.sleep(4)

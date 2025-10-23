@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report
 
 
 n = "\n"               #Jump to next line
-print("\033c")         #Clear screen
+# print("\033c")         #Clear terminal
 
 #import dataset and ensure dataset is in folder
 try: 
@@ -74,3 +74,14 @@ print("Confusion Matrix:", confusion_matrix(y_test,y_pred), n)
 
 #Classification Report
 print("Classification report:", classification_report(y_test,y_pred))
+
+
+
+# Create model
+import pickle
+
+model_filename = 'Models/LR_diabetes_model.pkl'
+with open(model_filename, 'wb') as file:
+    pickle.dump(clf, file)
+
+print(f"Model saved as {model_filename}")
