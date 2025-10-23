@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiabetesCheck - AI Diabetes Risk Prediction</title>
+    <meta name="description" content="Advanced diabetes risk prediction using machine learning. Get instant analysis based on key health indicators.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    <h1>DiabetesCheck</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h2 class="hero-title">Diabetes Risk Prediction Tool</h2>
+                    <p class="hero-description">
+                        Advanced machine learning models to assess diabetes risk based on key health indicators. 
+                        Get instant predictions using state-of-the-art algorithms.
+                    </p>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="/predict_page" class="btn btn-primary btn-lg">Start Prediction</a>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Accurate</h3>
+                        <p class="feature-description">
+                            Uses validated machine learning models trained on comprehensive medical datasets.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Fast Results</h3>
+                        <p class="feature-description">
+                            Instant analysis with results displayed in seconds. No waiting required.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Easy to Use</h3>
+                        <p class="feature-description">
+                            Simple form with clear instructions. Enter your data and get predictions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="notice-card">
+                    <h3 class="notice-title">Important Notice</h3>
+                    <p class="notice-text">
+                        This tool is for informational purposes only and should not be used as a substitute 
+                        for professional medical advice, diagnosis, or treatment. Always seek the advice of 
+                        your physician or other qualified health provider with any questions you may have 
+                        regarding a medical condition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

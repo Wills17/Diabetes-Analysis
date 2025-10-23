@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Prediction Result</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result - DiabetesCheck</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body>
-    <h2>Prediction Result</h2>
-    <p>{{ result }}</p>
-    <a href="/">Go Back</a>
+
+<body data-risk="{{ risk }}" data-model="{{ model }}">
+  <header class="header">
+    <div class="container">
+      <a href="{{ url_for('home') }}" class="logo">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </svg>
+        <h1>DiabetesCheck</h1>
+      </a>
+    </div>
+  </header>
+
+  <main class="main main-result">
+    <div class="container">
+      <div class="result-card">
+        {% if risk %}
+        <div class="result-icon result-icon-warning">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </div>
+        <h2 class="result-status-title result-status-warning">{{ result }}</h2>
+        <p class="result-status-description">The analysis indicates potential diabetes risk. Please consult with a healthcare professional.</p>
+        {% else %}
+        <div class="result-icon result-icon-success">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <h2 class="result-status-title result-status-success">{{ result }}</h2>
+        <p class="result-status-description">Great news! Based on the provided health indicators, no diabetes detected.</p>
+        {% endif %}
+
+        <div class="result-badge">
+          <p class="result-model">Model: {{ 'Logistic Regression' if model == 'logreg' else 'K-Nearest Neighbors' }}</p>
+        </div>
+      </div>
+
+      <div class="result-actions">
+        <a href="{{ url_for('predict_page') }}" class="btn btn-outline btn-lg">New Prediction</a>
+        <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">Back to Home</a>
+      </div>
+
+      <div class="result-disclaimer">
+        <p class="disclaimer-text">
+          This prediction is based on machine learning analysis and should not replace professional medical advice.
+        </p>
+      </div>
+    </div>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
