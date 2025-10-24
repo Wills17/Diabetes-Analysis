@@ -9,6 +9,12 @@ This app extends the offline Python model pipeline (EDA + Model Training + Cross
 
 ---
 
+### 🚀 Live Demo
+
+🔗 **Try it here:** [Live Demo.](https://diabetes-analysis-7ew5.onrender.com)
+
+---
+
 ## ⚙️ **Features**
 
 * 🧠 **Multiple Models** — Logistic Regression & K-Nearest Neighbors
@@ -137,6 +143,6 @@ These analyses ensure proper understanding before model training.
 ## 👨‍💻 **Author**
 
 **Williams Odunayo**
-*Machine Learning Engineer*
+Machine Learning Engineer
 
-
+🔗 [LinkedIn](https://linkedin.com/in/williams-odunayo)
